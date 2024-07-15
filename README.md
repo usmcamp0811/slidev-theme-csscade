@@ -7,10 +7,9 @@ run `npm run dev` to check out the example slides for more details of how to sta
 Live demo: [https://csscade.github.io/slidev-theme-csscade](https://csscade.github.io/slidev-theme-csscade)
 
 |                     Dark                     |                       Light                        |
-|:--------------------------------------------:|:--------------------------------------------------:|
+| :------------------------------------------: | :------------------------------------------------: |
 |        ![cover](example-export/1.png)        |        ![cover](example-export-light/1.png)        |
 | ![transition-headline](example-export/4.png) | ![transition-headline](example-export-light/4.png) |
-
 
 ## Install
 

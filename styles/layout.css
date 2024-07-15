@@ -4,7 +4,7 @@
   /* can be overrided by uses `themeConfig` option */
   --slidev-theme-primary: #5d8392;
   --background-dark: #202428;
-  --color-primary: #59B7D3;
+  --color-primary: #59b7d3;
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
@@ -128,9 +128,9 @@ ul {
   width: 48px;
 
   &::before {
-    background-image: url('/arrow.png');
+    background-image: url("/arrow.png");
     background-size: contain;
-    content: '';
+    content: "";
     height: 30px;
     left: 9px;
     position: absolute;
