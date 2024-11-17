@@ -10,23 +10,15 @@ defineProps({
 <template>
   <aside class="waves-bg" :class="{ animated: animated }">
     <div class="waves">
-      <svg
-        class="editorial"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-      >
+      <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0
+          <path id="gentle-wave" d="M-160 44c30 0
     58-18 88-18s
     58 18 88 18
     58-18 88-18
     58 18 88 18
-    v44h-352z"
-          />
+    v44h-352z" />
         </defs>
         <g class="parallax">
           <use xlink:href="#gentle-wave" x="50" y="0" />
@@ -39,6 +31,8 @@ defineProps({
 </template>
 
 <style scoped lang="scss">
+@use "sass:color";
+
 .waves-bg {
   position: fixed;
   bottom: -40px;
@@ -53,14 +47,14 @@ defineProps({
     margin: 0;
   }
 
-  .parallax > use {
+  .parallax>use {
     animation: move-forever 40s linear infinite;
 
     $primary-color: #59b7d4;
 
     &:nth-child(1) {
       animation-delay: -2s;
-      fill: lighten($primary-color, 18%);
+      fill: color.adjust($primary-color, $lightness: 18%);
     }
 
     &:nth-child(2) {
@@ -72,7 +66,7 @@ defineProps({
     &:nth-child(3) {
       animation-delay: -4s;
       animation-duration: 12s;
-      fill: darken($primary-color, 18%);
+      fill: color.adjust($primary-color, $lightness: -18%);
     }
   }
 
@@ -80,6 +74,7 @@ defineProps({
     0% {
       transform: translate(-90px, 0%);
     }
+
     100% {
       transform: translate(85px, 0%);
     }

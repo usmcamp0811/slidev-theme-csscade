@@ -274,7 +274,7 @@ console.log(distance(3, 4));
 
 # Diffs can be reviewed
 
-{monaco-diff} can generate a diff between two code blocks!
+monaco-diff can generate a diff between two code blocks!
 
 <!-- prettier-ignore -->
 ```ts {monaco-diff}

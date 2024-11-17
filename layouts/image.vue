@@ -11,7 +11,7 @@ image: /<img-path>
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { handleBackground } from "../node_modules/@slidev/client/layoutHelper";
+import { handleBackground } from "../helpers/layoutHelper";
 import SlidesCurrentNumber from "../components/slides-current-number.vue";
 
 const props = defineProps({
