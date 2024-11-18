@@ -36,20 +36,21 @@ const props = defineProps({
 
 <style>
 .slidev-layout.section {
-  padding: 5.5rem 6rem 6rem;
+  padding: 10rem 6rem 6rem;
   text-align: center;
 
   .section-header {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   h2 {
     font-size: 3rem;
     line-height: 4rem;
-    margin: 65px 5.5rem 30px;
+    margin-left: 6rem;
   }
 
   p {

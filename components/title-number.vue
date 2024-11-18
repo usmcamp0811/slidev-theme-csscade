@@ -25,9 +25,12 @@ defineProps({
   .title-index {
     font-family: var(--font-secondary);
     font-size: 2rem;
-    left: 48%;
+    line-height: 2rem;
+    left: 8%;
     position: absolute;
-    top: 15%;
+    top: 27%;
+    width: 60px;
+    text-align: center;
   }
 }
 </style>
